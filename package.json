@@ -1,0 +1,16 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkotsugai/Web-FIAP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

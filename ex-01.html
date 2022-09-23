@@ -5,38 +5,20 @@
     <meta charset="utf-8" />
     <title>Curso de HTML5, CSS3 e JavaScript</title>
     <style type="text/css">
-        div {
+        div.container {
             width: 100%;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background: linear-gradient(rgba(0,0,0,0.4) 70%, rgba(0, 0, 0, 0.2));
+            background: linear-gradient(rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.2));
             text-align: center;
         }
 
-        h1,
-        h2 {
-            margin: 0;
-            font-weight: 300;
-            font-family: 'Roboto', 'sans-serif';
-        }
-
-        
-        h1 {
-            font-size: 4em;
-        }
-
-        h2 {
-            font-size: 2em;
-        }
-
-        /* Daqui pra cima é tudo mobile em diante */
         body {
-            background: url(assets/images/background-mobile.webp) no-repeat;
-            background-size: cover;
-            background-position: center center;
+            margin: 0;
+            padding: 0;
         }
 
         h1,
@@ -48,8 +30,43 @@
             margin: 0;
             font-size: 300;
             font-family: 'Roboto', 'sans-serif';
+            color: #555;
+        }
+
+        #dan{
+            color:aqua;
+        }
+
+        h1.titulo{
+            color:red;
+        }
+
+        body>div.container>h1.titulo{
+             color:black !important;  
+        }
+
+        body>div>h1.titulo{
+            color:red;
+        }
+
+        h1.titulo {
+            font-size: 2em;
             color: #fff;
         }
+
+        h2.titulo {
+            font-size: 1.5em;
+            margin-top: 5%;
+            color: #fff;
+        }
+
+
+        body {
+            background: url(assets/images/background-mobile.webp) no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
 
         /* tablet */
         @media (min-width: 768px) {
@@ -59,35 +76,39 @@
                 background-position: center center;
             }
         }
-            /* desktop */
-            @media (min-width: 1280px) {
-                body {
-                    background: url(assets/images/background-desktop.webp) no-repeat;
-                    background-size: cover;
-                    background-position: center center;
-                }
+
+        /* desktop */
+        @media (min-width: 1280px) {
+            body {
+                background: url(assets/images/background-desktop.webp) no-repeat;
+                background-size: cover;
+                background-position: center center;
             }
-                /* Extra Large - ex.: iMac 27" */
-                @media (min-width: 1680px) {
-                    body {
-                        background: url(assets/images/background-desktop.webp) no-repeat;
-                        background-size: cover;
-                        background-position: center center;
-                    }}
+        }
+
+        /* Extra Large - ex.: iMac 27" */
+        @media (min-width: 1680px) {
+          h1.titulo{
+            font-size: 3em;
+          }
+          h2.tituto{
+            font-size: 2em;
+          }
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1> Seja Bem vindo(a) ao Curso de HTML5, CSS3 e JavaScript</h1>
-        <h2>Estamos estudando no momento: <i>HTML5</i></h2>
+    <div class="container">
+        <h1 class="titulo" id="dan"> Seja Bem vindo(a) ao Curso de HTML5, CSS3 e JavaScript</h1>
+        <h2 class="titulo">Estamos estudando no momento: <i>HTML5</i></h2>
     </div>
 </body>
 
 </html>
 
-/* 
-    <!DOCTYPE html> - determina o tipo do doc html para navegador.
+
+<!-- <!DOCTYPE html> - determina o tipo do doc html para navegador.
     tag <html></html> é chamada de elemento ancestral os filhos são head e body.
     div - a tag div é um elemento de bloco! 
 
@@ -103,5 +124,4 @@
     terceira dica: fuja das cores pretas e primárias 
     quarta dica: usar imagens de alta definição 
 
-    utilizar .svg e .webp para imagens 
- */
+    utilizar .svg e .webp para imagens  -->
